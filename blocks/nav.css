@@ -1,0 +1,50 @@
+.nav__links {
+  grid-area: nav;
+  display: none; /*Desactivamos el menu */
+  align-self: start; /* Hacemos que el texto se alinie para que no abarque todo el contenedor */
+  column-gap: 20px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.nav__link {
+  color: #ffffff;
+  text-decoration: none; /* Quitamos subrayado */
+  position: relative; /* Para el subrayado dinamico */
+
+  /* Estilo de texto */
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+
+  width: 0;
+  height: 2px;
+
+  background: #e0b14a;
+  transition: width 0.3s ease;
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
+@media screen and (min-width: 544px) {
+  .nav__links {
+    display: flex;
+    margin-top: 2rem;
+  }
+}
+
+/* Espacio Desktop */
+@media screen and (min-width: 1024px) {
+  .nav__links {
+    display: flex;
+  }
+}

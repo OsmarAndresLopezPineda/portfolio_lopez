@@ -1,0 +1,156 @@
+.contact {
+  display: grid;
+  box-sizing: border-box;
+
+  margin: 3vw;
+  gap: 3vw;
+
+  grid-template-areas:
+    "linkedin linkedin  whatsapp"
+    "email email email"
+    "github github github";
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+
+  text-align: left;
+  padding: 2vw;
+
+  border-radius: 16px;
+
+  border: none;
+  background-color: #808080;
+}
+
+.card--email {
+  grid-area: email;
+  background: linear-gradient(180deg, #2197bd, #085bb1);
+}
+
+.card--email:hover {
+  background: #085bb1;
+}
+
+.card--whatsapp {
+  grid-area: whatsapp;
+  background: linear-gradient(180deg, #25d366, #00752b);
+}
+
+.card--whatsapp:hover {
+  background: #00752b;
+}
+
+.card--github {
+  grid-area: github;
+  background: linear-gradient(180deg, #25262f, #0c0d16);
+}
+
+.card--github:hover {
+  background: #0c0d16;
+}
+
+.card--linkedin {
+  grid-area: linkedin;
+  background: linear-gradient(180deg, #0a66c2, #002f5f);
+}
+
+.card--linkedin:hover {
+  background: #002f5f;
+}
+
+.card__icon {
+  position: relative;
+  width: 3.5rem;
+}
+
+.card__icon-arrow {
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+
+  width: 2rem;
+  height: auto;
+}
+
+.card__title {
+  color: #ffffff;
+  /* Posicionamiento mobile*/
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-size: 1em;
+}
+
+.card__data {
+  color: #ffffff;
+  /* Posicionamiento mobile*/
+  margin: 0;
+
+  font-size: 0.9em;
+}
+
+.card__data-message {
+  display: none;
+
+  color: #bbbbbb;
+  font-size: 0.7em;
+  /* Posicionamiento mobile*/
+  margin: 0;
+  margin-top: 0.5em;
+}
+
+.card__link {
+}
+/* ------------------------------------ */
+
+/* Espacio tablet */
+@media screen and (min-width: 544px) {
+  .card__icon {
+    width: 5rem;
+  }
+  .card__icon-arrow {
+    width: 3rem;
+    height: auto;
+  }
+}
+
+/* Espacio Desktop */
+@media screen and (min-width: 1024px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .contact {
+    margin: 1.5rem;
+    gap: 1.5rem;
+
+    grid-template-areas:
+      "email email whatsapp whatsapp"
+      "email email linkedin linkedin"
+      "github github github github";
+  }
+  .card__icon {
+    position: relative;
+    width: 5rem;
+  }
+  .card__icon-arrow {
+    top: 1rem;
+    right: 1rem;
+
+    width: 3rem;
+    height: auto;
+  }
+  .card__title {
+    font-size: 1.5em;
+  }
+
+  .card__data {
+    font-size: 1em;
+  }
+
+  .card__data-message {
+    font-size: 0.9em;
+  }
+}

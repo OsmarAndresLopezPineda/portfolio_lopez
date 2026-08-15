@@ -1,0 +1,29 @@
+.page {
+  /* Tamaño de pantalla */
+  width: 100%;
+  /* Cenrado automatico */
+  margin: 0 auto;
+
+  /* Fuentes */
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #142552;
+
+  /* Espacio en mobiles */
+  padding: 1.25rem 1rem 1.5rem;
+  box-sizing: border-box; /* Evita que se desborde */
+}
+
+/* Espacio en tablests*/
+@media screen and (min-width: 544px) {
+  .page {
+    padding: 2rem 2rem 2.5rem;
+  }
+}
+
+/* Espacio Desktop */
+@media screen and (min-width: 1024px) {
+  .page {
+    max-width: 1280px;
+    padding: 2rem 10rem 2.5rem;
+  }
+}

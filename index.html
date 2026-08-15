@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Metadatos -->
+    <title>Portafolio Web</title>
+    <link rel="shortcut icon" href="favicon.svg" />
+    <meta
+      name="description"
+      content="Handmade Web portfolio with my skills learnead in the TripleTen Bootcamp"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Tripleten, Metadatos, Responsive, BEM, Metodology, Fonts, Depuration"
+    />
+    <meta name="author" content="Osmar Andres Lopez Pineda" />
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <!-- Menu Navegacion -->
+        <div class="nav__links">
+          <a class="nav__link" href="#home">Home</a>
+          <a class="nav__link" href="#project">Project</a>
+          <a class="nav__link" href="#about-me">About me</a>
+          <a class="nav__link" href="#contact">Contact</a>
+        </div>
+        <!-- Profile Photo -->
+        <img
+          class="header__photo"
+          alt="Profile photo"
+          src="./images/profilePhoto.png"
+        />
+        <h1 class="header__title">PORTFOLIO WEB</h1>
+        <!-- Autor and Label-->
+        <h2 class="header__author">Osmar Andres Lopez Pineda</h2>
+        <h3 class="header__author-label">@SoftwareDeveloper</h3>
+        <!-- Description -->
+        <div class="header__description">
+          <p class="header__description-text">🎂 06.04.2000</p>
+          <p class="header__description-text">
+            🌎 Tlaquepaque, Jalisco, México
+          </p>
+        </div>
+        <a
+          class="header__button-download"
+          href="./files/OALP_Resume_V2.pdf"
+          download="OALP_Resume_V2.pdf"
+          >Download CV</a
+        >
+      </header>
+      <main class="content">
+        <section id="contact" class="contact">
+          <template id="contact__template">
+            <div class="card">
+              <img class="card__icon" src="" alt="" />
+              <h3 class="card__title"></h3>
+              <p class="card__data"></p>
+              <span class="card__data-message"></span>
+              <a
+                class="card__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="card__icon-arrow"
+                  src="./images/icons/arrowIcon.svg"
+                  alt="Arrow Icon"
+                />
+              </a>
+            </div>
+          </template>
+        </section>
+      </main>
+    </div>
+    <script src="./scripts/contact_info.js"></script>
+  </body>
+</html>

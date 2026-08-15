@@ -1,0 +1,208 @@
+.header {
+  display: grid;
+  box-sizing: border-box;
+
+  background: linear-gradient(180deg, #1f4188, #0d2658);
+  border-radius: 16px;
+  /* Posicionamiento Mobile */
+  padding: 2.5rem;
+
+  grid-template-areas:
+    "title"
+    "photo"
+    "author"
+    "author-label"
+    "description"
+    "media-button";
+}
+
+.header__photo {
+  grid-area: photo;
+  border-radius: 40px;
+  /* Estilo Mobile */
+  width: 75%;
+  justify-self: center; /* Alineamos al centro del bloque */
+  margin-top: 1.5rem;
+}
+
+.header__title {
+  grid-area: title;
+  color: #ffffff;
+  margin: 0;
+
+  /* Estilo de texto Mobile */
+  text-align: center;
+
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: 2px;
+}
+
+.header__author {
+  grid-area: author;
+  color: #ffffff;
+  margin: 0;
+
+  /* Estilo Mobile */
+  text-align: center;
+  margin-top: 1.5rem;
+
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.header__author-label {
+  grid-area: author-label;
+  color: #bbbbbb;
+  margin: 0;
+  /* Estilo Mobile */
+  text-align: center;
+  margin-top: 1rem;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.header__description {
+  grid-area: description;
+  margin: 0;
+}
+
+.header__description-text {
+  color: #ffffff;
+  margin: 0;
+
+  /* Estilo de texto */
+  text-align: center;
+  margin-top: 0.5rem;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+}
+
+.header__button-download {
+  grid-area: media-button;
+  color: #ffffff;
+  background-color: #ffb200;
+
+  margin-top: 1rem;
+  padding: 1.5rem 3rem;
+  border-radius: 4px;
+
+  text-decoration: none;
+  /* Centramos el boton*/
+  justify-self: center;
+  align-self: center;
+  /* Centramos el contenido del boton*/
+  justify-content: center;
+  align-items: center;
+
+  /* Estilo de texto */
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* Espacio tablet */
+@media screen and (min-width: 544px) {
+  .header {
+    grid-template-areas:
+      "title"
+      "photo"
+      "author"
+      "author-label"
+      "description"
+      "media-button"
+      "nav";
+  }
+
+  .header__title {
+  }
+  .header__author {
+  }
+  .header__author-label {
+    font-size: 30px;
+  }
+  .header__description {
+  }
+  .header__description-text {
+    font-size: 30px;
+  }
+  .header__button-download {
+    width: 40%;
+    text-align: center;
+  }
+}
+
+/* Espacio Desktop */
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 2.5rem 4.5rem;
+    column-gap: 4.5rem;
+
+    grid-template-areas:
+      "title nav"
+      "photo author"
+      "photo author-label"
+      "photo description"
+      "photo media-button";
+  }
+
+  .header__photo {
+    grid-area: photo;
+    border-radius: 40px;
+    width: 100%;
+  }
+
+  .header__title {
+    /* Estilo de texto */
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.25;
+
+    text-align: center;
+  }
+
+  .header__author {
+    /* Estilo de texto */
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.1;
+
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .header__author-label {
+    /* Estilo de texto */
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 100%;
+
+    text-align: left;
+  }
+
+  .header__description {
+    text-align: left;
+  }
+
+  .header__description-text {
+    justify-self: start;
+    margin-top: 0.5rem;
+    /* Estilo de texto */
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
+  }
+
+  .header__button-download {
+    /* Centramos el boton izquierda*/
+    justify-self: start;
+    margin-top: 0.5rem;
+    padding: 1.5rem 2rem;
+  }
+}

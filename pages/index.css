@@ -1,0 +1,9 @@
+/* Cargamos el estandar de nuestra pagina*/
+@import url("../vendor/normalize.css");
+@import url("../vendor/fonts.css");
+/* Cargamos las partes de nuestra pagina */
+@import url("../blocks/page.css");
+@import url("../blocks/buttons.css");
+@import url("../blocks/header.css");
+@import url("../blocks/nav.css");
+@import url("../blocks/contact.css");
