@@ -23,3 +23,6 @@ Este es un proyecto de desarrollo web donde plasmo todos los conocimientos adqui
 - Implementacion de fuentes externas
 - Barra de navegacion (Nav)
 - Objetos Embebidos
+
+#Link de mi pagina principal:
+https://osmarandreslopezpineda.github.io/portfolio_lopez/
